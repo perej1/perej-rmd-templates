@@ -1,4 +1,8 @@
 
+#' Custom PDF template
+#'
+#' @export
+#'
 stat_exercise <- function(...) {
   # locations of resource files in the package
   pkg_resource <- function(...) {
