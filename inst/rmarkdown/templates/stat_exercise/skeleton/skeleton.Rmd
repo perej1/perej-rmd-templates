@@ -1,7 +1,13 @@
 ---
-title: "Exercise"
-author: ""
-date: ""
+title: "Untitled"
+first-name: FirstName
+last-name: LastName
+module: ModuleNumber
+teammates: [student1, student2]
+module-lead: Prof. Smith
+lab-date: XX/XX/XX
+due-date: XX/XX/XX
+TA: John Smith
 output: perejrmd::stat_exercise
 ---
 
