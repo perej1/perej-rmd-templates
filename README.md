@@ -1,2 +1,4 @@
-# perej-rmd-templates
-My R Markdown templates
+# perejrmd
+
+My R Markdown templates.
+
