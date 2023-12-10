@@ -1,5 +1,11 @@
 ---
 title: "Untitled"
+course-name: Statistics Course
+exercise-name: Exercise Set 0
+university: Aalto University
+department: Department of Mathematics and Systems Analysis
+lecturer: M. Luennoitsija
+assistant: M. Opettaja
 first-name: FirstName
 last-name: LastName
 module: ModuleNumber
@@ -9,9 +15,6 @@ lab-date: XX/XX/XX
 due-date: XX/XX/XX
 TA: John Smith
 output: perejrmd::stat_exercise
-papersize: a4paper
-fontsize: 11pt
-documentclass: article
 geometry: margin=2cm
 ---
 

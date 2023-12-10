@@ -8,9 +8,8 @@ stat_exercise <- function(...) {
   pkg_resource <- function(...) {
     system.file(..., package = "perejrmd")
   }
-
-  template <- pkg_resource("rmarkdown/templates/stat_exercise/resources/template.tex")
-
+  template <- pkg_resource(paste0("rmarkdown/templates/stat_exercise/",
+                                  "resources/template.tex"))
   bookdown::pdf_document2(
     latex_engine = "xelatex",
     toc = FALSE,

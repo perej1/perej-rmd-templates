@@ -1,4 +1,4 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[a4paper, 11pt]{article}
 $if(fontfamily)$
 \usepackage{$fontfamily$}
 $else$
@@ -149,6 +149,24 @@ $if(compact-title)$
 
 \setlength{\droptitle}{-2em}
 $endif$
+
+\usepackage{fancyhdr} % For creating header
+\usepackage{lastpage} % For page count
+
+% Create header
+\pagestyle{fancy}
+\setlength{\headheight}{35.10004pt}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\fancyhead[L]{$course-name$ \\
+$department$ \\
+$university$}
+\fancyhead[R]{$lecturer$ / $assistant$ \\
+Fall 2023 \\
+\textbf{$exercise-name$}}
+
+% Create footer
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+\fancyfoot[C]{}
 
 \title{
 \noindent
