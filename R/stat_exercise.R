@@ -15,6 +15,7 @@ stat_exercise <- function(...) {
     toc = FALSE,
     number_sections = FALSE,
     template = template,
+    citation_package = "biblatex",
     ...
   )
 

@@ -1,27 +1,45 @@
 ---
-title: "Untitled"
 course-name: Statistics Course
 exercise-name: Exercise Set 0
 university: Aalto University
 department: Department of Mathematics and Systems Analysis
-lecturer: M. Luennoitsija
-assistant: M. Opettaja
-first-name: FirstName
-last-name: LastName
-module: ModuleNumber
-teammates: [student1, student2]
-module-lead: Prof. Smith
-lab-date: XX/XX/XX
-due-date: XX/XX/XX
-TA: John Smith
+lecturer: Lecturer
+assistant: Assistant
+bibliography: sources.bib
 output: perejrmd::stat_exercise
-geometry: margin=2cm
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Adding an RMarkdown Template
+# About
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+R Markdown template for exercises of statistics courses in Aalto University.
+
+# Features
+
+Metadata related to the course can be given in the YAML header. Metadata can include the following fields:
+
+1. Course name
+2. Exercise name
+3. University
+4. Department
+5. Lecturer
+6. Assistant
+
+This template also includes a bibliography file containing a single reference [@rmarkdown]. Template uses \texttt{bibtex} for managing references and the bibliography style is set to \texttt{authoryear}.
+
+The YAML header of this template looks like the following.
+```
+---
+course-name: Statistics Course
+exercise-name: Exercise Set 0
+university: Aalto University
+department: Department of Mathematics and Systems Analysis
+lecturer: Lecturer
+assistant: Assistant
+bibliography: sources.bib
+output: perejrmd::stat_exercise
+---
+```
