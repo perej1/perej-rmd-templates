@@ -11,7 +11,13 @@
 \usepackage{listings}
 \usepackage{longtable,booktabs}
 \usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{parskip} % Indentation and spacing for paragraphs
+\usepackage[setpagesize=false, % page size defined by xetex
+            unicode=false, % unicode breaks when used with xetex
+            xetex]{hyperref}
 
+% tightlist command for lists without linebreak
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
@@ -126,43 +132,17 @@ $if(bibliography)$
 \bibliography{$bibliography$}
 $endif$
 
+% Pandoc syntax highlighting
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
 
-$if(graphics)$
-\usepackage{graphicx}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-$endif$
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
 \hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={$author-meta$},
-            pdftitle={$title-meta$},
             colorlinks=true,
-            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
-            pdfborder={0 0 0}}
+            citecolor=red,
+            urlcolor=blue,
+            linkcolor=magenta}
 \urlstyle{same}  % don't use monospace font for urls
-
-
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
 
 $if(numbersections)$
 \setcounter{secnumdepth}{5}
