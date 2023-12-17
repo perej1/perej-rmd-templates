@@ -3,8 +3,8 @@ course-name: Statistics Course
 exercise-name: Exercise Set 0
 university: Aalto University
 department: Department of Mathematics and Systems Analysis
-lecturer: Lecturer
-assistant: Assistant
+teachers: [Lecturer, Assistant]
+time: Spring 2024
 bibliography: sources.bib
 output: perejrmd::stat_exercise
 ---
@@ -19,16 +19,16 @@ R Markdown template for exercises of statistics courses in Aalto University.
 
 # Features
 
-Metadata related to the course can be given in the YAML header. Metadata can include the following fields:
+Metadata related to the course *has* be given in the YAML header. Metadata includes the following fields:
 
 1. Course name
 2. Exercise name
 3. University
 4. Department
-5. Lecturer
-6. Assistant
+5. Teachers (usually lecturer + teaching assistant)
+6. Time of the course, e.g., Spring 2024
 
-This template also includes a bibliography file containing a single reference [@rmarkdown]. Template uses \texttt{bibtex} for managing references and the bibliography style is set to \texttt{authoryear}.
+This template also includes a bibliography file containing a single reference [@rmarkdown]. Template uses \texttt{bibtex} for managing references and the bibliography style is set to \texttt{authoryear}. Template works also without the \texttt{bib} file.
 
 The YAML header of this template looks like the following.
 ```
@@ -37,8 +37,8 @@ course-name: Statistics Course
 exercise-name: Exercise Set 0
 university: Aalto University
 department: Department of Mathematics and Systems Analysis
-lecturer: Lecturer
-assistant: Assistant
+teachers: [Lecturer, Assistant]
+time: Spring 2024
 bibliography: sources.bib
 output: perejrmd::stat_exercise
 ---
