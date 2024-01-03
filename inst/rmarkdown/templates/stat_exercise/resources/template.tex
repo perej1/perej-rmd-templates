@@ -17,6 +17,16 @@
             unicode=false, % unicode breaks when used with xetex
             xetex]{hyperref}
 
+% Figure placement
+\usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
 % tightlist command for lists without linebreak
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
